@@ -7,7 +7,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class ReccyclerAdapter(var arrayList: ArrayList<CommentsItem>):RecyclerView.Adapter<ReccyclerAdapter.ViewHolder>() {
+class ReccyclerAdapter(var arrayList: ArrayList<CommentsItem>):
+    RecyclerView.Adapter<ReccyclerAdapter.ViewHolder>() {
     class ViewHolder(view: View):RecyclerView.ViewHolder(view) {
         var emailid:TextView=view.findViewById(R.id.emailid)
         var gender:TextView=view.findViewById(R.id.gender)
